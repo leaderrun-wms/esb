@@ -44,12 +44,27 @@
 * 消息唯一ID（防止消息重复处理）
 * 产生系统（ASN/FD/WMS/etc）
 * 业务类型
-* 报文版本号（针对某个业务类型的报文）
-* 发生时间
+* 报文版本号（针对某个业务类型的报文，采用semver格式）
+* 发生时间 (Epoch time in Millisecond)
 
 消息体：
 * 按产生系统、业务类型、报文版本号 界定 明确的格式
 
+例如：
+```json
+{
+  "header": {
+    "msgId": "12345678XXXXXX",
+    "sysId": "ASN",
+    "type": "asn.submitted",
+    "version": "1.0.0",
+    "timestamp": 1592982477000
+  },
+  "body": {
+    // 由不同业务类型产生不同的格式定义，在消息格式注册表查找对应格式
+  }
+}
+```
 ## 生产者注册表
 
 参考 [生产者注册表](producer-registry) 文件
