@@ -6,6 +6,7 @@
 |---------------|----------|---------------|
 | asn           | ASN号码  | ASN2006001234 |
 | warehouseCode | 仓库代码 | PLA           |
+| processId     | 工单号   | IPLA200602467 |
 | arrivedAt     | 到达时间 | 1592982477000 |
 
 ## 样本
@@ -14,6 +15,7 @@
 {
     "asn": "ASN2006001234",
     "warehouseCode": "PLA",
+    "processId": "IPLA200602467",
     "arrivedAt": 1592982477000
 }
 ```
