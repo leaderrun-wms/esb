@@ -1,5 +1,16 @@
 # 消息格式注册表
 
-| 消息类型       | 系统ID | 版本 | 产生说明       | 内文格式 和 样本                       |
-| -------------- | ------ | ---- | -------------- | -------------------------------------- |
-| kn.so.received | ASN    | 1    | KN上传了SO档案 | [格式和样本](kn.so.received/README.md) |
+| 消息类型          | 系统ID | 版本 | 产生说明                     | 内文格式 和 样本                         |
+|-------------------|--------|------|------------------------------|------------------------------------------|
+| so.received       | ASN    | 1    | 客户上传了SO档案             | [格式和样本](so.received/README.md)      |
+| asn.approved      | ASN    | 1    | ASN已审核通过                | [格式和样本](asn.approved/README.md)     |
+| asn.arrived       | FD     | 1    | ASN已到达仓库(交单)          | [格式和样本](asn.arrived/README.md)      |
+| customs.declared  | FD     | 1    | 海关已申报                   | [格式和样本](customs.declared/README.md) |
+| customs.released  | FD     | 1    | 海关已放行                   | [格式和样本](customs.released/README.md) |
+| inbound.started   | WMS    | 1    | 开始卸货                     |                                          |
+| inbound.finished  | WMS    | 1    | 完成卸货                     |                                          |
+| outbound.received | WMS    | 1    | 收到出库指令                 |                                          |
+| outbound.started  | WMS    | 1    | 出库指令开始处理（开始装柜） |                                          |
+| outbound.sealed   | WMS    | 1    | 已锁封                       |                                          |
+| customs.declared  | FD     | 1    | 海关已申报（和入库一致）     | [格式和样本](customs.declared/README.md) |
+| customs.released  | FD     | 1    | 海关已放行（和入库一致）     | [格式和样本](customs.released/README.md) |
