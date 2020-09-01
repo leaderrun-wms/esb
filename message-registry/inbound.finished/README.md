@@ -11,7 +11,7 @@
 | soCode         |  SO              |4363-9188-001.123|
 | packs          | 包装信息          |list             |
 | unit           | 包装单位          |CTN / PLT        |
-| packageQty     | 包装数量          | 56              |
+| qty            | 包装数量          | 56              |
 | inboundType    | 收货模式          | PDA / 导入      |
 
 
@@ -25,8 +25,8 @@
     "soInfos":[{
         "soCode": "4363-9188-001.123",
         "packs":[
-            {unit:"PLT","packageQty":"5"},
-            {unit:"CTN","packageQty":"3"}
+            {unit:"PLT","qty":"5"},
+            {unit:"CTN","qty":"3"}
         ]
     }],
     "inboundType": "PDA"
