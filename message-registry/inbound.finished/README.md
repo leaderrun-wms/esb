@@ -22,13 +22,47 @@
     "orderNumber": "IPLA200300001",
     "customerCode": "KN-ACCO",
     "storageDate": "2020-06-05",
-    "soInfos":[{
-        "soCode": "4363-9188-001.123",
-        "packs":[
-            {unit:"PLT","qty":"5"},
-            {unit:"CTN","qty":"3"}
+    "soInfos": [
+      {
+        "soCode": "4363-0923-912.011A",
+        "packs": [
+          {
+            "unit": "PLT",
+            "qty": "1"
+          },
+          {
+            "unit": "CTN",
+            "qty": "2"
+          }
         ]
-    }],
+      },
+      {
+        "soCode": "4363-0923-912.011B",
+        "packs": [
+          {
+            "unit": "PLT",
+            "qty": "3"
+          },
+          {
+            "unit": "CTN",
+            "qty": "4"
+          }
+        ]
+      },
+      {
+        "soCode": "4363-9188-001.122",
+        "packs": [
+          {
+            "unit": "PLT",
+            "qty": "2"
+          },
+          {
+            "unit": "CTN",
+            "qty": "6"
+          }
+        ]
+      }
+    ],
     "inboundType": "PDA"
-}
+  }
 ```
